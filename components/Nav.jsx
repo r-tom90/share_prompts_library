@@ -21,8 +21,8 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="flex-between w-full mb-16 pt-3">
-      <Link href="/" className="fle gap-2 flex-center">
+    <nav className="flex-between mb-16 w-full pt-3">
+      <Link href="/" className="fle flex-center gap-2">
         <Image
           src="/assets/images/logo.svg"
           alt="Prompt Library Logo"
@@ -34,7 +34,7 @@ const Nav = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="sm:flex hidden">
+      <div className="hidden sm:flex">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" className="black_btn">
@@ -72,7 +72,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="sm:hidden flex relative">
+      <div className="relative flex sm:hidden">
         {session?.user ? (
           <div className="flex">
             <Image
@@ -101,7 +101,7 @@ const Nav = () => {
                 </Link>
                 <button
                   type="button"
-                  className="mt-5 w-full black_btn"
+                  className="black_btn mt-5 w-full"
                   onClock={() => {
                     setToggleDropdown(false);
                     signOut();

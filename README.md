@@ -34,3 +34,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 Repository: https://github.com/r-tom90/share_prompts_library
+
+<!-- npm i bcrypt mongodb mongoose
+ next-auth -->
+
+[x] Implement Search
+
+<!-- - [] Search by prompt
+    - [] Search by tag
+    - [] Search by username -->
+
+[x] Implement Click on tag
+[x] Implement view other profiles
